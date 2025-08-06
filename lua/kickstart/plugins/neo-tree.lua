@@ -8,6 +8,7 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
+    'folke/snacks.nvim',
   },
   lazy = false,
   keys = {
@@ -19,6 +20,12 @@ return {
         mappings = {
           ['\\'] = 'close_window',
         },
+      },
+      filtered_items = {
+        hide_by_pattern = {
+          '*.r',
+        },
+        hide_dotfiles = false,
       },
     },
   },
